@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Web de Cadastro de Currículos para Vagas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="max-width-container">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="title">Sistema Web de Cadastro de Currículos para Vagas</h1>
+                <p class="subtitle">Cadastre seu currículo para oportunidades de carreira</p>
+            </div>
+
+            <!-- Main Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Formulário de Cadastro</h2>
+                    <p class="card-description">Preencha seus dados para se candidatar a vagas</p>
+                </div>
+                <div class="card-content">
+                    <div id="success-message" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3 class="success-title">Cadastro Realizado com Sucesso!</h3>
+                        <p class="success-text">Seus dados foram recebidos e armazenados com segurança. Você receberá um e-mail de confirmação em breve.</p>
+                    </div>
+                    <form id="cadastro-form" class="form">
+                        <!-- Nome -->
+                        <div class="form-group">
+                            <label for="nome" class="label">Nome Completo *</label>
+                            <input 
+                                id="nome" 
+                                name="nome" 
+                                type="text" 
+                                placeholder="Ex: João Silva" 
+                                class="input"
+                            >
+                            <p id="error-nome" class="error-message"></p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="label">E-mail *</label>
+                            <input 
+                                id="email" 
+                                name="email" 
+                                type="email" 
+                                placeholder="Ex: joao@example.com" 
+                                class="input"
+                            >
+                            <p id="error-email" class="error-message"></p>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="form-group">
+                            <label for="telefone" class="label">Telefone *</label>
+                            <input 
+                                id="telefone" 
+                                name="telefone" 
+                                type="tel" 
+                                placeholder="Ex: (47) 99999-9999" 
+                                class="input"
+                            >
+                            <p id="error-telefone" class="error-message"></p>
+                        </div>
+
+                        <!-- Experiência -->
+                        <div class="form-group">
+                            <label for="experiencia" class="label">Experiência Profissional *</label>
+                            <textarea 
+                                id="experiencia" 
+                                name="experiencia" 
+                                placeholder="Descreva suas experiências profissionais anteriores..." 
+                                class="textarea" 
+                                rows="4"
+                            ></textarea>
+                            <p id="error-experiencia" class="error-message"></p>
+                        </div>
+
+                        <!-- Formação -->
+                        <div class="form-group">
+                            <label for="formacao" class="label">Formação Acadêmica *</label>
+                            <textarea 
+                                id="formacao" 
+                                name="formacao" 
+                                placeholder="Descreva sua formação acadêmica, cursos e certificações..." 
+                                class="textarea" 
+                                rows="4"
+                            ></textarea>
+                            <p id="error-formacao" class="error-message"></p>
+                        </div>
+
+                        <!-- Consentimento -->
+                        <div class="consent-box">
+                            <div class="consent-content">
+                                <input 
+                                    id="consentimento" 
+                                    name="consentimento" 
+                                    type="checkbox" 
+                                    class="checkbox"
+                                >
+                                <div class="consent-text">
+                                    <label for="consentimento" class="consent-label">Li e aceito a Política de Privacidade *</label>
+                                    <p class="consent-description">
+                                        Autorizo o tratamento dos meus dados pessoais para fins de recrutamento e seleção de candidatos, conforme descrito em nossa 
+                                        <a href="politica-privacidade.html" class="privacy-link" target="_blank">Política de Privacidade</a>.
+                                    </p>
+                                </div>
+                            </div>
+                            <p id="error-consentimento" class="error-message"></p>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-button">Enviar Cadastro</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

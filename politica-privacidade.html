@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Sistema de Cadastro de Currículos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #27ae60;
+            --danger-color: #e74c3c;
+            --light-bg: #ecf0f1;
+            --text-color: #2c3e50;
+            --border-color: #bdc3c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+
+        .section h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .section ul,
+        .section ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .important-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .important-box h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .contact-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .update-date {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #e0e0e0;
+            }
+
+            .content {
+                background: #2a2a2a;
+                color: #e0e0e0;
+            }
+
+            .section h2 {
+                color: #64b5f6;
+            }
+
+            .section h3 {
+                color: #b3e5fc;
+            }
+
+            .important-box {
+                background-color: #1e3a5f;
+                border-left-color: #64b5f6;
+            }
+
+            .important-box h4 {
+                color: #64b5f6;
+            }
+
+            .contact-box {
+                background-color: #333;
+            }
+
+            .contact-box a {
+                color: #64b5f6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Voltar ao Formulário</a>
+
+        <header>
+            <h1>Política de Privacidade</h1>
+            <p>Sistema Web de Cadastro de Currículos para Vagas</p>
+        </header>
+
+        <div class="content">
+            <div class="update-date">
+                <strong>Última atualização:</strong> Novembro de 2025
+            </div>
+
+            <div class="section">
+                <h2>1. Introdução</h2>
+                <p>
+                    Bem-vindo à nossa Política de Privacidade. Esta política explica como coletamos, usamos, protegemos e compartilhamos suas informações pessoais quando você utiliza nosso Sistema Web de Cadastro de Currículos para Vagas.
+                </p>
+                <p>
+                    Estamos comprometidos em proteger sua privacidade e garantir que você tenha uma experiência positiva em nossa plataforma. Esta política está em conformidade com a <span class="highlight">Lei Geral de Proteção de Dados (LGPD)</span>, o <span class="highlight">Marco Civil da Internet</span> e outras regulamentações aplicáveis.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>2. Coleta de Dados</h2>
+                <h3>Quais dados coletamos?</h3>
+                <p>Coletamos os seguintes dados pessoais quando você se cadastra em nossa plataforma:</p>
+                <ul>
+                    <li><strong>Nome Completo:</strong> Para identificação do candidato</li>
+                    <li><strong>E-mail:</strong> Para comunicação e confirmação de cadastro</li>
+                    <li><strong>Telefone:</strong> Para contato direto sobre oportunidades</li>
+                    <li><strong>Experiência Profissional:</strong> Histórico de trabalhos anteriores</li>
+                    <li><strong>Formação Acadêmica:</strong> Educação formal e certificações</li>
+                </ul>
+
+                <h3>Como coletamos?</h3>
+                <p>
+                    Os dados são coletados diretamente através do formulário de cadastro que você preenche voluntariamente. Você deve fornecer consentimento explícito antes de enviar seus dados.
+                </p>
+
+                <div class="important-box">
+                    <h4>⚠️ Importante</h4>
+                    <p>
+                        Não coletamos dados sensíveis (saúde, origem racial, orientação sexual) sem seu consentimento explícito e justificativa clara de necessidade, conforme exigido pela LGPD.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Uso dos Dados</h2>
+                <p>Seus dados pessoais são utilizados exclusivamente para os seguintes fins:</p>
+                <ol>
+                    <li><strong>Processamento de Candidaturas:</strong> Avaliar seu perfil para oportunidades de emprego</li>
+                    <li><strong>Comunicação:</strong> Entrar em contato sobre vagas relevantes e atualizações</li>
+                    <li><strong>Melhoria do Serviço:</strong> Aprimorar nossa plataforma e experiência do usuário</li>
+                    <li><strong>Conformidade Legal:</strong> Cumprir obrigações legais e regulatórias</li>
+                    <li><strong>Segurança:</strong> Detectar e prevenir fraudes e atividades maliciosas</li>
+                </ol>
+
+                <div class="important-box">
+                    <h4>✓ Princípio da Finalidade</h4>
+                    <p>
+                        Seus dados <strong>não serão utilizados para fins diferentes</strong> daqueles descritos nesta política sem seu consentimento prévio e explícito.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Segurança de Dados</h2>
+                <p>
+                    Implementamos medidas técnicas e organizacionais robustas para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição:
+                </p>
+                <ul>
+                    <li><strong>Criptografia:</strong> Dados em trânsito são protegidos por HTTPS/TLS</li>
+                    <li><strong>Validação de Entrada:</strong> Verificação rigorosa de dados para prevenir ataques</li>
+                    <li><strong>Controle de Acesso:</strong> Apenas pessoal autorizado pode acessar dados pessoais</li>
+                    <li><strong>Logs de Auditoria:</strong> Registro de todas as operações sobre dados para rastreabilidade</li>
+                    <li><strong>Backup Seguro:</strong> Cópias de segurança criptografadas e armazenadas com segurança</li>
+                </ul>
+
+                <p>
+                    Porém, nenhuma transmissão de dados pela Internet é 100% segura. Embora façamos nossos melhores esforços, não podemos garantir segurança absoluta.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>5. Seus Direitos</h2>
+                <p>
+                    De acordo com a LGPD, você tem os seguintes direitos sobre seus dados pessoais:
+                </p>
+                <ul>
+                    <li><strong>Direito de Acesso:</strong> Solicitar cópia de todos os seus dados pessoais armazenados</li>
+                    <li><strong>Direito de Correção:</strong> Atualizar ou corrigir dados imprecisos</li>
+                    <li><strong>Direito de Exclusão:</strong> Solicitar a exclusão completa de seus dados (direito ao esquecimento)</li>
+                    <li><strong>Direito de Portabilidade:</strong> Receber seus dados em formato estruturado e portável</li>
+                    <li><strong>Direito de Oposição:</strong> Opor-se ao processamento de seus dados para fins específicos</li>
+                    <li><strong>Direito de Revogar Consentimento:</strong> Retirar seu consentimento a qualquer momento</li>
+                </ul>
+
+                <p>
+                    Para exercer qualquer desses direitos, entre em contato conosco através dos dados fornecidos na seção de contato abaixo.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>6. Retenção de Dados</h2>
+                <p>
+                    Seus dados pessoais serão retidos pelo período necessário para cumprir os fins descritos nesta política, conforme exigido pela lei:
+                </p>
+                <ul>
+                    <li><strong>Dados de Cadastro:</strong> Mantidos enquanto sua candidatura estiver ativa (máximo 2 anos de inatividade)</li>
+                    <li><strong>Dados de Comunicação:</strong> Mantidos conforme necessário para fins de conformidade legal</li>
+                    <li><strong>Logs de Auditoria:</strong> Mantidos por 1 ano para fins de segurança e conformidade</li>
+                </ul>
+
+                <p>
+                    Após o período de retenção, seus dados serão deletados de forma segura, a menos que a lei exija retenção adicional.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>7. Compartilhamento de Dados</h2>
+                <p>
+                    Seus dados pessoais <strong>não serão compartilhados com terceiros</strong> sem seu consentimento explícito, exceto:
+                </p>
+                <ul>
+                    <li><strong>Recrutadores Autorizados:</strong> Apenas com empresas que têm vagas relevantes e assinaram acordos de confidencialidade</li>
+                    <li><strong>Requisitos Legais:</strong> Quando exigido por lei, autoridade judicial ou regulatória</li>
+                    <li><strong>Prestadores de Serviço:</strong> Fornecedores que processam dados em nosso nome (com contratos de proteção de dados)</li>
+                </ul>
+
+                <div class="important-box">
+                    <h4>🔒 Confidencialidade</h4>
+                    <p>
+                        Todos os parceiros que acessam seus dados são obrigados por contrato a manter a confidencialidade e usar seus dados apenas para os fins especificados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. Conformidade Legal</h2>
+                <p>
+                    Nossa plataforma está em conformidade com as seguintes regulamentações:
+                </p>
+                <ul>
+                    <li><strong>LGPD (Lei nº 13.709/2018):</strong> Lei Geral de Proteção de Dados do Brasil</li>
+                    <li><strong>Marco Civil da Internet (Lei nº 12.965/2014):</strong> Constituição da Internet Brasileira</li>
+                    <li><strong>Código Penal Brasileiro:</strong> Proteção contra crimes cibernéticos e fraudes</li>
+                    <li><strong>GDPR (Regulamento UE 2016/679):</strong> Se você está na União Europeia</li>
+                </ul>
+
+                <p>
+                    Realizamos avaliações regulares de conformidade e auditoria de segurança para garantir que mantemos os mais altos padrões de proteção de dados.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>9. Cookies e Tecnologias de Rastreamento</h2>
+                <p>
+                    Nossa plataforma utiliza cookies e tecnologias similares para:
+                </p>
+                <ul>
+                    <li>Melhorar sua experiência de navegação</li>
+                    <li>Manter você autenticado em sua sessão</li>
+                    <li>Analisar como você usa nossa plataforma</li>
+                    <li>Personalizar conteúdo e recomendações</li>
+                </ul>
+
+                <p>
+                    Você pode controlar cookies através das configurações do seu navegador. Desabilitar cookies pode afetar a funcionalidade de nossa plataforma.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>10. Alterações a Esta Política</h2>
+                <p>
+                    Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas, tecnologia, requisitos legais ou outros fatores. Quando fizermos alterações materiais, notificaremos você por e-mail ou através de um aviso destacado em nossa plataforma.
+                </p>
+
+                <p>
+                    Seu uso contínuo da plataforma após notificação de alterações constitui sua aceitação da Política de Privacidade revisada.
+                </p>
+            </div>
+
+            <div class="contact-box">
+                <h3>📧 Dúvidas sobre Privacidade?</h3>
+                <p>
+                    Se você tiver dúvidas, preocupações ou desejar exercer seus direitos de privacidade, entre em contato conosco:
+                </p>
+                <p>
+                    <strong>E-mail:</strong> <a href="mailto:privacidade@sistema-curriculos.com">privacidade@sistema-curriculos.com</a>
+                </p>
+                <p>
+                    <strong>Telefone:</strong> <a href="tel:+5548999999999">(48) 99999-9999</a>
+                </p>
+                <p>
+                    <strong>Endereço:</strong> Rua da Privacidade, 123 - Joinville, SC - Brasil
+                </p>
+                <p style="margin-top: 20px; font-size: 0.9rem;">
+                    Responderemos suas solicitações dentro de 30 dias úteis, conforme exigido pela LGPD.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Sistema Web de Cadastro de Currículos para Vagas. Todos os direitos reservados.</p>
+            <p>Esta Política de Privacidade foi elaborada em conformidade com a LGPD e melhores práticas internacionais de proteção de dados.</p>
+        </footer>
+    </div>
+</body>
+</html>
